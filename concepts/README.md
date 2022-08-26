@@ -36,4 +36,4 @@ where:
 	- `av` is a `NULL` terminated array of strings.
 	- `ac` is the number of elements in `av`.
 
-- [x] [2-args.c](args.c) - prints the number of arguments passed to the program without using `ac`.
+- [x] [2-args.c](2-args.c) - prints the number of arguments passed to the program without using `ac`.
