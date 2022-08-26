@@ -27,3 +27,14 @@ Each process has a `parent`: the process that created it. It is possible to get 
 
 ### commandline arguments
 
+command line arguments are passed through the the `main` function:
+
+``` 
+int main(int ac, char **av);
+
+```
+where:
+	- `av` is a `NULL` terminated array of strings.
+	- `ac` is the number of elements in `av`.
+
+- [x] [2-args.c](args.c) - prints the number of arguments passed to the program without using `ac`.
