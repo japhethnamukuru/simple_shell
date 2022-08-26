@@ -31,7 +31,6 @@ command line arguments are passed through the the `main` function:
 
 ``` 
 int main(int ac, char **av);
-
 ```
 where:
 	- `av` is a `NULL` terminated array of strings.
