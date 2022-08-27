@@ -37,3 +37,10 @@ where:
 	- `ac` is the number of elements in `av`.
 
 - [x] [2-args.c](2-args.c) - prints the number of arguments passed to the program without using `ac`.
+
+### Reading line from the stdin file stream
+
+`getline` is the function used to get a single line of `stdin` in C as so:
+
+- [x] [3-get_line.c](3-get_line.c) - fetches a single line from `stdin` using the `getline()` function.
+
