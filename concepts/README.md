@@ -70,3 +70,19 @@ The memory allocated may be more than required for the input chars. If less memo
 
 - [x] [4-getline.c](4-getline.c) - loops through a file, collecting all lines into a single string. This can be used to read a file passed in  as command line args. 
 
+---
+### String Tokens strtok()
+
+`strtok()` is a library function that breaks the `str` into a series of tokens using the delimiter `delim`. It has the below prototype:
+```
+char *strtok(char *str, const char *delim);
+```
+
+**parameters**
+
+- **str** The string that is split into smaller strings
+- **delim** The c string containing the delimeters.
+
+**Return Value**
+
+- Returns a pointer to the pointer to the first token found in the string, and null otherwise.
