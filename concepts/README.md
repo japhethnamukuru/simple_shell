@@ -62,5 +62,6 @@ getline(&line, &len, stdin);
 __The newline character('\n'), not the null terminator is counted in the length__
 
 The memory allocated may be more than required for the input chars. If less memory is allocated initially, `getline()` can `realloc()` a longer buffer, while updating the `line` variable to point to the new buffer and updating `len`.
- 
+
+- [x] [4-getline.c](4-getline.c) - loops through a file, collecting all lines into a single string. This can be used to read a file passed in  as command line args. 
 
