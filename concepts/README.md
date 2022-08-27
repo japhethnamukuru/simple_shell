@@ -42,5 +42,25 @@ where:
 
 `getline` is the function used to get a single line of `stdin` in C as so:
 
-- [x] [3-get_line.c](3-get_line.c) - fetches a single line from `stdin` using the `getline()` function.
+- [x] [3-get_line.c](3-get_line.c) - fetches a single line from `stdin` using the `getline()` function. `getline()` allocates memory to the buffer i.e `line` in the above file thus `free(line)` is required after the operatiotn.
+
+---
+#### Working functionality of getline()
+
+`getline()` recieves 3 arguments:
+	- A pointer to a buffer i which to store the line string i.e `line` in the above code.
+	- A pointer to the size of the buffer.
+	- A pointer to the input stream as below:
+```
+getline(&line, &len, stdin);
+```
+`getline()` does the following:
+	- Allocates memory fpr the string buffer on the heap.
+	- Updates the len variable to track memory allocation.
+	- Reads a line into the heap allocated string buffer.
+	- Returns the length of the string that has been allocated.
+__The newline character('\n'), not the null terminator is counted in the length__
+
+The memory allocated may be more than required for the input chars. If less memory is allocated initially, `getline()` can `realloc()` a longer buffer, while updating the `line` variable to point to the new buffer and updating `len`.
+ 
 
